@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins' , sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    min-height: 100vh;
+    background-color: #2F3038;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    width: 90%;
+    margin: auto;
+}
+
+.brand-logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: inherit;
+}
+.brand-logo-name{
+    margin-left: 1.2rem;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+nav a{
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:hover{
+    color: #adadad;
+}
+#showcase{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 80vh;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10rem;
+    align-self: center;
+}
+.title{
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+.subtitle{
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+.lady-img{
+    background-image: url(../img/landing-page-girl.png);
+    flex-grow: 1;
+    min-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.btn{
+    color: inherit;
+    background-color: #1762a7;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+}
+a{
+    text-decoration: none;
+}
+@media (max-width: 768px){
+    .lady-img{
+        display: none;
+    }
+    .info{
+        justify-content: center;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .showcase{
+        display: flex;
+        flex-direction: column;
+    }
+}
