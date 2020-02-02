@@ -50,9 +50,9 @@ nav a:hover{
 }
 .info{
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: flex-start;
-    margin: 10rem;
     align-self: center;
 }
 .title{
@@ -67,6 +67,10 @@ nav a:hover{
 }
 .cta{
     padding: 50px 0px 0px 0px;
+}
+.info-img{
+    display: flex;
+    flex: 1;
 }
 .lady-img{
     background-image: url(../img/landing-page-girl.png);
@@ -88,17 +92,27 @@ a{
     text-decoration: none;
 }
 @media (max-width: 768px){
-    .lady-img{
+    .info-img{
         display: none;
     }
     .info{
         justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .title{
         font-size: 36px;
     }
-    .showcase{
+    #showcase{
         display: flex;
         flex-direction: column;
+        background: url(../img/landing-page-girl.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        align-items: center;
+    }
+    .cta{
+        align-items: center;
     }
 }
