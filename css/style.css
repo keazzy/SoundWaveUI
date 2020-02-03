@@ -95,6 +95,13 @@ a{
     .info-img{
         display: none;
     }
+    nav{
+        display: none;
+    }
+    .menu:hover{
+        cursor: pointer;
+        
+    }
     .info{
         justify-content: center;
         align-items: center;
@@ -112,7 +119,12 @@ a{
         background-position: bottom;
         align-items: center;
     }
+
     .cta{
         align-items: center;
+    }
+    .btn:hover{
+        background: linear-gradient(#1762A7, #BC3A80, 0.1)#BC3A80;
+        color: aliceblue;
     }
 }
